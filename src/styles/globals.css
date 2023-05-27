@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("loadingAnimation.css");
+
+
+html {
+  background-color: #0D0E12;
+  color: #F4F4F4;
+}
+
+/* Ellipse 384 */
+
+.gradient1 {
+  position: absolute;
+  width: 1691px;
+  height: 929px;
+  left: -861px;
+  top: -384px;  
+  background: radial-gradient(50% 50% at 50% 50%, rgba(112, 5, 220, 0.1) 0%, rgba(112, 5, 220, 0) 100%);
+}
+/* Ellipse 385 */
+
+.gradient2 {
+  position: absolute;
+  width: 2564px;
+  height: 1433px;
+  right: -1900px;
+  bottom: -550px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 242, 228, 0.1) 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+
