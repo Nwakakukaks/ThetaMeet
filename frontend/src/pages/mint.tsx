@@ -45,7 +45,7 @@ function Mint({}: Props) {
   };
 
   return (
-    <div className="relative overflow-hidden pb-[40px] min-h-screen">
+    <div className="relative overflow-scroll pb-[40px] min-h-screen">
       <Header />
       <div className="asbolute ">
         <div className="gradient2"></div>

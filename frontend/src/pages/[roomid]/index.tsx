@@ -57,9 +57,9 @@ const App = () => {
 
   const { peers } = usePeers();
 
-  
+  const ProjectId = 'KL1r3E1yHfcrRbXsT4mcE-3mK60Yc3YR'
 
-  useRecorder(roomId, process.env.NEXT_PUBLIC_PROJECT_ID || "");
+  useRecorder(roomId, ProjectId || "");
 
   useEffect(() => {
     if (!isRoomJoined) {

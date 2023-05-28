@@ -8,7 +8,7 @@ import { useAccount } from "wagmi";
 
 type Props = {};
 
-function InitHuddle() {
+function InitHuddle() { 
   const { roomId, setRoomId } = useRoomId();
   const { initialize, isInitialized } = useHuddle01();
   const { address } = useAccount();
@@ -39,12 +39,13 @@ function InitHuddle() {
         const response = await axios.post(
           "/api/create-room",
           {
-            title: "HuddleScribe Demo Meet",
+            title: "ThetaMeet Session",
             hostWallets: [address],
           },
           {
             headers: {
               "Content-Type": "application/json",
+    
             },
           }
         );

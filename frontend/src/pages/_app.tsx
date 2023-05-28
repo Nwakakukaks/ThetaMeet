@@ -16,11 +16,7 @@ const { connectors } = getDefaultClient({
   appName: 'Theta Meet',
   chains
 });
-// const wagmiConfig = createConfig({
-//   autoConnect: true,
-//   connectors,
-//   publicClient
-// })
+
 const wagmiClient = createClient({
   autoConnect: true,
   connectors,

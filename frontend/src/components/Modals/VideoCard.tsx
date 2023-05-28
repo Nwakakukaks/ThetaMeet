@@ -77,8 +77,8 @@ function VideoCard({}: VideoCardProps) {
           <audio ref={audioElement} autoPlay muted />
         </>
       ) : (
-        <div className="flex flex-col items-center justify-center h-full w-full">
-          <div className="h-[130px] w-[130px] rounded-full bg-white/10 p-2">
+        <div className="flex flex-col items-center justify-center  h-full w-full">
+          <div className="h-[130px] w-[130px] rounded-full bg-black/2 p-2">
             <div className="w-full h-full rounded-full flex shadow-2xl items-center justify-center">
               <Avatar size={115} address={address} />
             </div>

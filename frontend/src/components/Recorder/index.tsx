@@ -45,7 +45,7 @@ function App(): JSX.Element {
           stop
         </button>
         <button onClick={handleSave} disabled={!mediaBlobUrl}>
-          save to Filecoin
+          save to Edge Store
         </button>
       </header>
     </div>

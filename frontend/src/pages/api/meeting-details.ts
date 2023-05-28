@@ -9,7 +9,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         {
           headers: {
             'Content-Type': 'application/json',
-            'x-api-key': process.env.NEXT_PUBLIC_API_KEY,
+            'x-api-key': 'VwTZ4AGTxme9snANex9tep3NwvVMGfYd',
           },
         }
       );

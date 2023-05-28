@@ -101,7 +101,7 @@ function MenuWithState({ userJoined }: Props) {
   const RecClick = () => {
     setIsRecOn(!isRecOn);
     if (!isRecOn) {
-      startRecording(`https://huddlescribe.vercel.app/${roomId}`);
+      startRecording(`https://thetameet.vercel.app/${roomId}`);
     } else {
       stopRecording();
       console.log("rec stop");

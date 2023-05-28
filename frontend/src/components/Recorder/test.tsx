@@ -39,7 +39,7 @@ function App(): JSX.Element {
       const metadata = await client.store({
         name: "My Awesome Video",
         description:
-          "This is a video uploaded to the Filecoin network using nft.storage.",
+          "This is a video uploaded to the Edge Store network using nft.storage.",
         image: new File(
           [
             /* thumbnail data */
@@ -74,7 +74,7 @@ function App(): JSX.Element {
           stop
         </button>
         <button onClick={handleSave} disabled={!mediaBlobUrl}>
-          save to Filecoin
+          save to Edge Store
         </button>
       </header>
     </div>

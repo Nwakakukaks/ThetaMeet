@@ -15,7 +15,7 @@ export const DateTime = () => {
 
     return(
         <div>
-            <p> {date.toLocaleTimeString()} {''}  {date.toLocaleDateString()}</p>
+            <p className='mr-6 text-semibold text-lg'> {date.toLocaleTimeString()} {'-'} {''}  {date.toLocaleDateString()}</p>
         </div>
     )
 }

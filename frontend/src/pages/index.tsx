@@ -45,7 +45,7 @@ const App = () => {
   });
 
   const { data: balance } = useContractRead({
-    address: "0x1BC1799Ab899a3bE3C25D18B3Dad36cD63d1DE6C",
+    address: "0x3c3414095Fdfc53B1DaA9B8cddcdE7CeB5F87BB1",
     abi: HSB_ABI,
     functionName: "balanceOf",
     args: [address],
@@ -67,26 +67,24 @@ const App = () => {
       </div>
       <div className="max-w-[1350px] mt-[110px] mx-auto   z-50 relative">
         <div className="flex space-x-[20px] h-[470px]">
-          <div className="relative w-full">
-            <div className=" border h-full relative border-white/10 bg-white/5 rounded-[10px] overflow-hidden">
-              <VideoCard />
-            </div>
-            <div className="flex items-center justify-center mt-[20px]">
-              <Menu userJoined={false} />
-            </div>
-          </div>
+         
           <div className="relative  w-full flex items-center justify-center space-y-[10px] flex-col rounded-[10px] overflow-hidden ">
-            <div className="max-w-[400px]">
-              <p className="text-[28px] font-bold opacity-90 space-x-2">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">
-                  GM Buildoors
+            <div className="max-w-[550px]">
+              <p className="text-[40px] font-bold opacity-90 space-x-2">
+                <span className="bg-clip-text text-black-500">
+                  Premium video meetings.
                 </span>
-                <span>🌞</span>
+                
               </p>
-              <p className="mt-[10px] opacity-70 text-[14px]">
-                Lets make sure youre not having a bad hair day 💇‍♂️ or
-                broadcasting a messy house 🏠 to the world 🌎 - do a quick hair
-                check and tidy up any evidence of your untidy lifestyle 🧹.
+              <p className="text-[40px] font-bold opacity-90 space-x-2">
+                <span className="bg-clip-text text-black-500">
+                  Now free for every one.
+                </span>
+                
+              </p>
+              <p className="mt-[10px] opacity-80 text-[18px]">
+              Tap into the full potential of Token-Gated Meets, Live Transcription, and AI powered meeting summaries. 
+              Join forces on projects, engage in dynamic meetings, and spark creativity with ease.
               </p>
 
               {isNFT ? (
@@ -98,7 +96,7 @@ const App = () => {
                     onChange={(e) => setDisplayNameText(e.target.value)}
                     className="mt-[26px] rounded-[10px] w-full px-[20px] py-[10px] text-16px bg-white/5 border border-white/10 outline-none"
                   />
-                  <div>
+                  <div className=" w-[180px]">
                     <Button
                       disabled={loading || !address}
                       onClick={(
@@ -111,12 +109,12 @@ const App = () => {
                       }}
                     >
                       {!address
-                        ? "Please connect your wallet first"
+                        ? "Connect wallet"
                         : loading
                         ? "Loading..."
                         : error
                         ? `Error: ${error}`
-                        : "Enter Room"}
+                        : "Join Meet"}
                     </Button>
                   </div>
                 </div>
@@ -139,6 +137,14 @@ const App = () => {
                   </div>
                 </div>
               )}
+            </div>
+          </div>
+          <div className="relative w-full">
+            <div className=" border h-full relative border-white/10 bg-white/5 rounded-[10px] overflow-hidden">
+              
+            </div>
+            <div className="flex items-center justify-center mt-[20px]">
+             
             </div>
           </div>
         </div>

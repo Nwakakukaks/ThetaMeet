@@ -44,7 +44,7 @@ const SpeechToText = () => {
       //   }),
       // });
       // const summaryText = await response.text();
-      setSummary("HuddleScribe is an innovative meeting app with live transcription, live captions, summarization, and token gated access features. It's designed to make collaboration and productivity easier and more effective, and is perfect for businesses, startups, and anyone who wants to communicate and collaborate seamlessly. With its cutting-edge technology and cool design, it's the ultimate meeting app for the future of collaboration.    ")
+      setSummary("ThetaMeet is an innovative meeting app with live transcription, live captions, summarization, and token gated access features. It's designed to make collaboration and productivity easier and more effective, and is perfect for businesses, startups, and anyone who wants to communicate and collaborate seamlessly. With its cutting-edge technology and cool design, it's the ultimate meeting app for the future of collaboration.    ")
 
       // setSummary(summaryText);
       setLoading(false);
