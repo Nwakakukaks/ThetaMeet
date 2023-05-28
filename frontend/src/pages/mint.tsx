@@ -56,7 +56,7 @@ function Mint({}: Props) {
         <div>
           <p
             onClick={() => Router.push("/")}
-            className="pb-[10px] flex items-center  text-[18px] text-blue-400 w-[400px] "
+            className="pb-[10px] flex items-center  text-[18px] text-blue-800 w-[400px] "
           >
             <ChevronLeft />
             <span>Back</span>
@@ -64,7 +64,7 @@ function Mint({}: Props) {
         </div>
         <div className="bg-white/10 rounded-[10px] w-[400px] p-[20px]">
           <p className="text-[22px] opacity-[60px]">ThetaMeet Pass</p>
-          <p className="opacity-40">
+          <p className="opacity-60">
           Experience seamless collaborations like never before. 
           Join forces on projects, engage in dynamic meetings, and spark creativity with ease.
           Mint now for exclusive access.

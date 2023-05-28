@@ -141,16 +141,16 @@ const App = () => {
                   <button
                     disabled={isNFT ? false : true}
                     onClick={() => console.log("")}
-                    className="py-[10px] mt-[20px] cursor-not-allowed	 bg-red-500 w-full rounded-[10px]"
+                    className="py-[10px] mt-[20px] cursor-not-allowed	text-white bg-blue-700 w-full rounded-[10px]"
                   >
-                    Please Get Mint NFT to Access App
+                    Welcome Friend, Mint Access NFT to get started
                   </button>
                   <div className="flex items-center ">
                     <button
                       onClick={() => Router.push("/mint")}
-                      className="mt-[15px] cursor-pointer text-cyan-500 text-center w-full"
+                      className="mt-[15px] cursor-pointer text-black-700 text-center w-full"
                     >
-                      Get Access NFT
+                      Mint Access NFT
                     </button>
                   </div>
                 </div>
