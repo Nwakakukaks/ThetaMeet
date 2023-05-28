@@ -18,7 +18,7 @@ html {
   height: 929px;
   left: -861px;
   top: -384px;  
-  background: radial-gradient(50% 50% at 50% 50%, rgba(112, 5, 220, 0.1) 0%, rgba(112, 5, 220, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(112, 5, 220, 0) 100%);
 }
 /* Ellipse 385 */
 
@@ -28,7 +28,7 @@ html {
   height: 1433px;
   right: -1900px;
   bottom: -550px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 242, 228, 0.1) 0%, rgba(217, 217, 217, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 

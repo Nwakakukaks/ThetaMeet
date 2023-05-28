@@ -1,20 +1,36 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { WagmiConfig, createClient } from "wagmi";
-
+import { thetaTestnet } from "../utils/theta_chain";
+import { publicProvider } from "wagmi/providers/public";
 import { ConnectKitProvider, getDefaultClient } from "connectkit";
-import { filecoinHyperspace } from "wagmi/chains";
+import { configureChains, createClient, WagmiConfig } from "wagmi";
 
-const client = createClient(
-  getDefaultClient({
-    appName: "Your App Name",
-    chains: [filecoinHyperspace],
-  })
+
+const { chains, provider, webSocketProvider } = configureChains(
+  [thetaTestnet],
+  [
+    publicProvider(),
+  ]
 );
+const { connectors } = getDefaultClient({
+  appName: 'Theta Meet',
+  chains
+});
+// const wagmiConfig = createConfig({
+//   autoConnect: true,
+//   connectors,
+//   publicClient
+// })
+const wagmiClient = createClient({
+  autoConnect: true,
+  connectors,
+  provider,
+  webSocketProvider,
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <WagmiConfig client={client}>
+    <WagmiConfig client={wagmiClient}>
       <ConnectKitProvider theme="midnight">
         <Component {...pageProps} />
       </ConnectKitProvider>

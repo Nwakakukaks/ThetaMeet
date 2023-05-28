@@ -16,7 +16,7 @@ function Mint({}: Props) {
   const [tokenId, setTokenId] = useState<string | undefined>();
 
   const contract = useContract({
-    address: "0x1BC1799Ab899a3bE3C25D18B3Dad36cD63d1DE6C",
+    address: "0x3c3414095Fdfc53B1DaA9B8cddcdE7CeB5F87BB1",
     abi: HSB_ABI,
     signerOrProvider: signer,
   });
@@ -56,21 +56,21 @@ function Mint({}: Props) {
         <div>
           <p
             onClick={() => Router.push("/")}
-            className="pb-[10px] flex items-center  text-[18px] text-cyan-500 w-[400px] "
+            className="pb-[10px] flex items-center  text-[18px] text-blue-400 w-[400px] "
           >
             <ChevronLeft />
             <span>Back</span>
           </p>
         </div>
         <div className="bg-white/10 rounded-[10px] w-[400px] p-[20px]">
-          <p className="text-[22px] opacity-[60px]">Mint HSB Nft HSB</p>
+          <p className="text-[22px] opacity-[60px]">ThetaMeet Pass</p>
           <p className="opacity-40">
-            By owning this NFT, you can unlock the ability to access
-            HuddleScribe. The minting of this NFT is open to everyone as it is a
-            demonstration.
+          Experience seamless collaborations like never before. 
+          Join forces on projects, engage in dynamic meetings, and spark creativity with ease.
+          Mint now for exclusive access.
           </p>
           <img
-            className="rounded-[10px] mt-[20px] h-[400px] w-[400px]"
+            className="rounded-[10px] mt-[20px] h-[450px] w-[300px] ml-[30px]"
             src="/nft.png"
             alt=""
           />
@@ -78,14 +78,14 @@ function Mint({}: Props) {
           {Number(tokenId) ? (
             <div className="mt-[20px] ">
               <p className="text-[14px]">
-                Contract: 0x1BC1799Ab899a3bE3C25D18B3Dad36cD63d1DE6C{" "}
+                Contract: 0x3c3414095Fdfc53B1DaA9B8cddcdE7CeB5F87BB1{" "}
               </p>
               <p className="py-[7px] rounded-[10px] mt-[10px] px-[20px] w-full bg-green-600 text-center">
                 Token ID : {tokenId}
               </p>
             </div>
           ) : (
-            <Button onClick={() => mintNft()}>Mint NFT</Button>
+            <Button onClick={() => mintNft()}>Mint Pass</Button>
           )}
         </div>
       </div>
