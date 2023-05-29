@@ -78,8 +78,8 @@ function VideoCard({}: VideoCardProps) {
         </>
       ) : (
         <div className="flex flex-col items-center justify-center  h-full w-full">
-          <div className="h-[130px] w-[130px] rounded-full bg-black/2 p-2">
-            <div className="w-full h-full rounded-full flex shadow-2xl items-center justify-center">
+          <div className="h-[130px] w-[130px] rounded-full bg-grey p-2">
+            <div className="w-full h-full rounded-full flex items-center justify-center">
               <Avatar size={115} address={address} />
             </div>
           </div>

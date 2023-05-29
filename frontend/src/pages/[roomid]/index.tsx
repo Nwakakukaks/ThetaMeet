@@ -94,8 +94,8 @@ const App = () => {
 
   console.log(peers);
   return (
-    <div className="relative overflow-hidden min-h-screen pb-[40px]">
-      <Header />
+    <div className="relative overflow-hidden min-h-screen pb-[40px] bg-[#101010] meeting ">
+      
       <InitHuddle />
 
       <div className="asbolute ">
@@ -104,8 +104,8 @@ const App = () => {
       </div>
 
       <div className="max-w-[1350px] mx-auto h-full mt-[30px] z-50 relative">
-        <div className="mb-[12px] opacity-60">
-          <p className="text-[18px]">Meeting: {meetingDetails?.title}</p>
+        <div className="mb-[12px] ml-15 opacity-90">
+          <p className="text-[28px] ">Meeting: {meetingDetails?.title}</p>
         </div>
 
         {/* <Recorder /> */}
@@ -129,7 +129,7 @@ const App = () => {
               <p>
                 {" "}
                 <p className="text-[14px] mt-[12px] text-red-500">
-                  temporarily disabled for demo
+                
                 </p>
               </p>
             </div>
@@ -152,7 +152,7 @@ const App = () => {
           {videoSrc && (
             <>
               <div className="flex flex-col w-1/2">
-                <p className="opacity-60 text-[20px]">Recoarded Video</p>
+                <p className="opacity-60 text-[20px]">Recorded Video</p>
                 <video
                   className="rounded-[10px] border border-white/10  mt-[16px]"
                   src={videoSrc}
