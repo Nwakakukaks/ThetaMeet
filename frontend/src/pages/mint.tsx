@@ -71,7 +71,7 @@ function Mint({}: Props) {
           </p>
           <img
             className="rounded-[10px] mt-[20px] h-[450px] w-[300px] ml-[30px]"
-            src="/nft.png"
+            src="images/nft.png"
             alt=""
           />
 
