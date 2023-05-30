@@ -80,7 +80,7 @@ function Mint({}: Props) {
               <p className="text-[14px]">
                 Contract: 0x3c3414095Fdfc53B1DaA9B8cddcdE7CeB5F87BB1{" "}
               </p>
-              <p className="py-[7px] rounded-[10px] mt-[10px] px-[20px] w-full bg-green-600 text-center">
+              <p className="py-[7px] rounded-[10px] mt-[10px] px-[20px] w-full bg-blue-600 text-center">
                 Token ID : {tokenId}
               </p>
             </div>

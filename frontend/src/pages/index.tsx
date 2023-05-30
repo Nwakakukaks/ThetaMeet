@@ -12,6 +12,7 @@ import InitHuddle from "@/components/InitHuddle";
 import { useDisplayName } from "@huddle01/react/app-utils";
 import { useAccount, useContractRead } from "wagmi";
 import HSB_ABI from "@/utils/hsbabi.json";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 const App = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -56,6 +57,26 @@ const App = () => {
 
   const isNFT = parseInt(tokenId || "0", 10);
 
+  const slides = ["images/lock.jpg", "images/nft.png"];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex: React.SetStateAction<number>) => {
+    setCurrentIndex(slideIndex);
+  };
+
   return (
     <div className="relative overflow-hidden pb-[40px] min-h-screen">
       <Header />
@@ -65,10 +86,10 @@ const App = () => {
         <div className="gradient2"></div>
         <div className="gradient1"></div>
       </div>
-      <div className="max-w-[1350px] mt-[110px] mx-auto   z-50 relative">
+      <div className="max-w-[1350px] mx-auto   z-50 relative">
         <div className="flex space-x-[20px] h-[470px]">
           <div className="relative  w-full flex items-center justify-center space-y-[10px] flex-col rounded-[10px] overflow-hidden ">
-            <div className="max-w-[550px]">
+            <div className="max-w-[550px] mt-[100px]">
               <p className="text-[40px] font-bold opacity-90 space-x-2">
                 <span className="bg-clip-text text-black-500">
                   Premium video meetings.
@@ -157,9 +178,42 @@ const App = () => {
               )}
             </div>
           </div>
-          <div className="relative w-full">
-            <div className=" border h-full relative border-white/10 bg-white/5 rounded-[10px] overflow-hidden"></div>
-            <div className="flex items-center justify-center mt-[20px]"></div>
+          <div className="relative w-full mt-[60px]">
+            <div className=" h-500 flex items-center justify-center relative group">
+              <div>
+                <img
+                  className="w-[330px] h-[330px] rounded-full bg-center bg-cover duration-300 overflow-hidden"
+                  src={slides[currentIndex]}
+                />
+                {/* Left Arrow */}
+                <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                  <BsChevronCompactLeft onClick={prevSlide} size={30} />
+                </div>
+                {/* Right Arrow */}
+                <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                  <BsChevronCompactRight onClick={nextSlide} size={30} />
+                </div>
+              </div>
+            </div>
+
+            <p className="text-[20px] mt-10 text-center font-semibold opacity-90 space-x-2">
+            NFT-based Secure Meeting Access.
+            </p>
+            <p className="mt-[5px] text-center opacity-80 text-[18px]">
+              Tap into the full potential of Token-Gated Meets, Live
+            
+            </p>
+
+            <div className="flex top-4 justify-center py-2">
+              {slides.map((_, i) => (
+                <div
+                  className={`
+              transition-all w-2 h-2 bg-blue-600 rounded-full ml-2
+              ${currentIndex === i ? " " : "bg-opacity-10"}
+            `}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
