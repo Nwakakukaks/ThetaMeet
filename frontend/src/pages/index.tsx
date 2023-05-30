@@ -57,7 +57,7 @@ const App = () => {
 
   const isNFT = parseInt(tokenId || "0", 10);
 
-  const slides = ["images/lock.jpg", "images/nft.png"];
+  const slides = ["images/lock.jpg", "images/theta1.png", "images/love.png" ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -186,11 +186,11 @@ const App = () => {
                   src={slides[currentIndex]}
                 />
                 {/* Left Arrow */}
-                <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
                   <BsChevronCompactLeft onClick={prevSlide} size={30} />
                 </div>
                 {/* Right Arrow */}
-                <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
                   <BsChevronCompactRight onClick={nextSlide} size={30} />
                 </div>
               </div>
@@ -200,8 +200,10 @@ const App = () => {
             NFT-based Secure Meeting Access.
             </p>
             <p className="mt-[5px] text-center opacity-80 text-[18px]">
-              Tap into the full potential of Token-Gated Meets, Live
-            
+            ThetaMeet can ensure that only individuals with valid and
+            </p>
+            <p className=" text-center opacity-80 text-[18px]">
+             authorized NFTs can join the meeting.
             </p>
 
             <div className="flex top-4 justify-center py-2">

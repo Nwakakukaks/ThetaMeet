@@ -11,7 +11,7 @@ function Logo({}: Props) {
     alt=""
   />
   {''}
-  <h1 className="mb-2 mt-2 text-blue-700 ml-3 text-2xl font-medium leading-tight text-primary">
+  <h1 className="mb-2 mt-2 text-blue-600 ml-3 text-2xl font-medium leading-tight text-primary">
   Theta Meet
 </h1>
   </span>
