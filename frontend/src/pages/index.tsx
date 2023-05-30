@@ -13,6 +13,7 @@ import { useDisplayName } from "@huddle01/react/app-utils";
 import { useAccount, useContractRead } from "wagmi";
 import HSB_ABI from "@/utils/hsbabi.json";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { Key } from "lucide-react";
 
 const App = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -184,6 +185,7 @@ const App = () => {
                 <img
                   className="w-[330px] h-[330px] rounded-full bg-center bg-cover duration-300 overflow-hidden"
                   src={slides[currentIndex]}
+                  alt=""
                 />
                 {/* Left Arrow */}
                 <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
@@ -208,7 +210,7 @@ const App = () => {
 
             <div className="flex top-4 justify-center py-2">
               {slides.map((_, i) => (
-                <div key={currentIndex}
+                <div key={i}
                   className={`
               transition-all w-2 h-2 bg-blue-600 rounded-full ml-2
               ${currentIndex === i ? " " : "bg-opacity-10"}
