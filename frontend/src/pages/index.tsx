@@ -208,7 +208,7 @@ const App = () => {
 
             <div className="flex top-4 justify-center py-2">
               {slides.map((_, i) => (
-                <div
+                <div key={currentIndex}
                   className={`
               transition-all w-2 h-2 bg-blue-600 rounded-full ml-2
               ${currentIndex === i ? " " : "bg-opacity-10"}
