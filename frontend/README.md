@@ -11,7 +11,7 @@ Theta Meet adds extra security to your meetings. By owning a unique NFT, you gai
 
 - Summarization Function: Long meetings? No worries! Theta Meet's AI-powered summarization function, backed by OpenAI, extracts key insights from lengthy discussions. Stay informed, engaged, and make the most of your precious time.
 
-- Token Gated Access: Theta Meet values security and authenticity. Only authorized users with their unique NFTs can unlock the full potential of HuddleScribe. Gain exclusive access to all the features, forging a path to productive collaboration.
+- Token Gated Access: Theta Meet values security and authenticity. Only authorized users with their unique NFTs can unlock the full potential of ThetaMeet. Gain exclusive access to all the features, forging a path to productive collaboration.
 
 
 ## What's next:
